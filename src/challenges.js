@@ -13,20 +13,26 @@ function calcArea(base, height) {
   let area = (base * height) / 2 ;
   return area;
 }
-
+ 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(string) {
+  const splits = string.split(' ');
+  return splits;
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(array) {
+  let primeiroItem = array[0];
+  let indice = array.length - 1;
+  let ultimoItem = array[indice];
+
+  return (ultimoItem + ', ' + primeiroItem);  
 }
+
 
 // Desafio 5
 function footballPoints() {
-  // seu código aqui
+  
 }
 
 // Desafio 6
