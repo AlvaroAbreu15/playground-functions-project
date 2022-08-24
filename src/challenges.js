@@ -31,18 +31,35 @@ function concatName(array) {
 
 
 // Desafio 5
-function footballPoints() {
-  
+function footballPoints(vitorias, empates) {
+ let pontosVitorias = vitorias * 3;
+ let pontosEmpates = empates * 1;
+ let soma = pontosVitorias + pontosEmpates;
+ return soma;
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(array) {
+   let maiorNumero = array[0];
+   let count = 0;
+  for (let i = 0; i < array.length ; i += 1){
+    if (array[i] > maiorNumero){
+      maiorNumero = array[i];
+    }
+  }
+  for (let index = 0; index < array.length ; index += 1){
+    if (maiorNumero === array[index]){
+       count += 1;
+    }
+  }
+  return count;
 }
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  
+
+  
 }
 
 // Desafio 8
