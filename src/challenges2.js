@@ -5,15 +5,26 @@ let valor = array[0];
 if (array.length > 11 || array.length < 11) {
   return 'Array com tamanho incorreto.';
 }
-  
-   for(let i = 0; i < array.length ; i += 1)
 }
-console.log(generatePhoneNumber('8599108373'));
+
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function triangleCheck(lineA, lineB, lineC) {
+  let sumA = lineA + lineB; // c
+  let sumB = lineA + lineC; // b
+  let sumC = lineB + lineC  // a
+  
+  let subA = Math.abs(lineA - lineB);
+  let subB = Math.abs(lineA - lineC);
+  let subC = Math.abs(lineB - lineC);
+
+  if (lineA < sumC && lineB < sumB && lineC < sumA && lineA > subC && lineB > subB && lineC > subA){
+    return true;
+  } else {
+    return false;
+  }
 }
+console.log(triangleCheck(10, 14, 8));
 
 // Desafio 13
 function hydrate() {
