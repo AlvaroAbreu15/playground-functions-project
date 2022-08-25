@@ -103,11 +103,25 @@ function decode(string) {
 
   return novaString;
 }
-console.log(decode('h3 th2r2!'));
+
 
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(array, name) {
+let arrayOrdenado = array.sort();
+let object = [];
+if (array.length !== 0){
+  for(let i = 0 ; i < arrayOrdenado.length ; i += 1){
+    let ordenado ={
+    tech: arrayOrdenado[i],
+    name: name
+    };
+    object.push(ordenado);
+  }
+}
+else if(array.length === 0){
+  return 'Vazio!';
+}
+return object;
 }
 
 module.exports = {
